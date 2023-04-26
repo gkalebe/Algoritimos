@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida</title>
+
+
+    <!--Css do início da Pagina-->
+    <style>
+        .center {
+            text-align: center;
+        }
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center">
+    <h1>Árvores são Vida</h1>
+    <img src="arvore.jpg" width="500">
+</div>
+
+    <strong align="justify">A importância da árvore não está só na sombra ou no oxigênio liberado: as árvores melhoram nossa qualidade de vida e até previnem doenças.</strong>
+    <h1>Índice</h1>
+    <ol>
+      <li><a href="#arvores">Árvores são fontes de oxigênio</a></li>
+      <li><a href="#temperatura">Temperatura</a></li>
+      <li><a href="#saude-mental">Natureza faz bem à saúde mental</a></li>
+    </ol>
+    
+    <h1 id="arvores">Árvores são fontes de oxigênio</h1>
+    <p align="justify">Que as árvores ajudam a manter o ar limpo, todo mundo já sabe. Mas como elas fazem isso já é outra história. Saiba mais sobre a importância da árvore e os benefícios proporcionados por esta planta lenhosa para a nossa saúde e para o planeta.
+        Para começar, uma árvore adulta consegue absorver, em um ano, aproximadamente 22 quilos de gás carbônico, e produzir oxigênio suficiente para a respiração de dois adultos. Esse processo acontece através da fotossíntese, que ocorre de duas maneiras: quando a planta obtém glicose, durante o dia, e por meio da respiração, quando a planta “quebra” a glicose para obter energia, durante a noite.
+            
+        Durante a fotossíntese, as plantas e algas fazem o processo inverso dos seres humanos, consumindo o gás carbônico e liberando oxigênio. No entanto, as plantas respiram dia e noite, consumindo também o oxigênio que produzem. Portanto, a principal fonte de oxigênio do planeta são as algas, que não são classificadas como plantas ou árvores.
+    </p>    
+    
+    <h1 id="temperatura">Temperatura</h1>
+    <p align="justify">
+        Em artígo publicado no Journal of Arboriculture, Klaus Scott, James Simpson e Gregory McPherson afirmam que a temperatura das cidades também é influenciada pela quantidade de árvores. De acordo com os autores, a sombra das árvores pode reduzir a temperatura do asfalto em até 2°C, e do interior dos carros em até 8°C.
+
+        Além disso, elas também refrescam o ambiente. Para você ter uma ideia, uma árvore grande e saudável produz o mesmo efeito de dez aparelhos ar-condicionado funcionando 20 horas por dia. Além disso, elas também ajudam a aumentar a umidade do ar.
+        </p>
+    
+    <h1 id="saude-mental">Natureza faz bem à saúde mental</h1>
+    <p align="justify">
+        A relação entre natureza e saúde mental tem ganhado cada vez mais destaque entre a comunidade científica. E não é para menos: diversos estudos já mostraram que a exposição à natureza pode trazer benefícios enormes para as pessoas, principalmente aquelas que vivem em grandes centros urbanos.
+            
+        Além disso, passar um tempo em espaços verdes ou incorporar ao seu dia a dia o contato com plantas, flores e árvores é uma maneira simples de relaxar e ter uma folga da correria cotidiana.</p>
+
+      
+    <!-- <ol>
+            <li>1.Árvores são fontes de oxigênio</li>
+            <li>2.Temperatura</li>
+            <li>3.Natureza faz bem à saúde mental</li>
+        </ol>-->
+    
+            
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade"><br>
+                    
+                    <label for="plantou_arvore">Você já plantou uma árvore?</label><br>
+                    <input type="radio" id="plantou_arvore_sim" name="plantou_arvore" value="sim" checked>
+                    <label for="plantou_arvore_sim">Sim</label><br>
+                    <input type="radio" id="plantou_arvore_nao" name="plantou_arvore" value="nao">
+                    <label for="plantou_arvore_nao">Não</label><br>
+                    
+                    <label for="plantou_arvore">Teria interesse em eventos, com intuito de plantação de árvores?</label><br>
+                    <input type="radio" id="interesse_eventos_sim" name="interesse_eventos" value="sim" checked>
+                    <label for="interesse_eventos_sim">Sim</label><br>
+                    <input type="radio" id="interesse_eventos_nao" name="interesse_eventos" value="nao">
+                    <label for="interesse_eventos_nao">Não</label><br>
+                  
+                    <label for="disponibilidade_viagens">Disponibilidade para viagens:</label><br>
+                    <input type="radio" id="viagens_sim" name="disponibilidade_viagens" value="sim" checked>
+                    <label for="viagens_sim">Sim</label><br>
+                    <input type="radio" id="viagens_nao" name="disponibilidade_viagens" value="nao">
+                    <label for="viagens_nao">Não</label><br>
+                    
+                    <label for="voluntario">Teria interesse em ser voluntário:</label><br>
+                    <input type="radio" id="voluntario_sim" name="voluntario" value="sim" checked>
+                    <label for="voluntario_sim">Sim</label><br>
+                    <input type="radio" id="voluntario_nao" name="voluntario" value="nao">
+                    <label for="voluntario_nao">Não</label><br>
+                  
+                    <label for="comentario">Gostaria de acrescentar algo que possamos melhorar:</label><br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea><br>
+                  
+                    <button type="submit" onclick="enviarFormulario()">Enviar</button>
+
+                  </form>
+                  <script>
+
+                    function enviarFormulario() {
+                        var nome = document.getElementById("nome").value;
+                        var email = document.getElementById("email").value;
+                        var idade = document.getElementById("idade").value;
+                        var plantouArvore = document.querySelector('input[name="plantou_arvore"]:checked').value;
+                        var interesseEventos = document.querySelector('input[name="interesse_eventos"]:checked').value;
+                        var disponibilidadeViagens = document.querySelector('input[name="disponibilidade_viagens"]:checked').value;
+                        var comentario = document.getElementById("comentario").value;
+
+
+                        var mensagem = "Nome: " + nome + "\n" +
+                                    "E-mail: " + email + "\n" +
+                                    "Idade: " + idade + "\n" +
+                                    "Plantou árvore: " + plantouArvore + "\n" +
+                                    "Interesse em eventos: " + interesseEventos + "\n" +
+                                    "Disponibilidade para viagens: " + disponibilidadeViagens + "\n" +
+                                    "Comentário: " + comentario;
+
+                        if (confirm(mensagem)) {
+                            alert("Enviado!");
+                        } else {
+                            alert("Envio cancelado.");
+                        }
+                    }
+    
+                </script>
+                  <!--Css do Formulário-->
+                  <style>
+                  
+                          form {
+                            background-color: #c5e1a5;
+                            width: 400px;
+                            padding: 20px;
+                            border-radius: 10px;
+                            float: left;
+                        }
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                        }
+
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="number"],
+                        textarea {
+                            width: 100%;
+                            padding: 5px;
+                            border-radius: 5px;
+                            border: none;
+                            margin-bottom: 10px;
+                        }
+
+                        input[type="radio"] {
+                            margin-right: 5px;
+                        }
+
+                        button {
+                            padding: 10px 20px;
+                            background-color: #4caf50;
+                            color: #fff;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            background-color: #388e3c;
+                        }
+                        
+                        </style>
+</body>
+</html>
